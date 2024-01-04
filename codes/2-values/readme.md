@@ -28,6 +28,15 @@ func main() {
 	fmt.Println(!true)
 }
 ```
+### Output
+```
+golang
+1+1 = 2
+7.0/3.0 = 2.3333333333333335
+false
+true
+false
+```
 
 Now, let's go through each part:
 
