@@ -1,5 +1,5 @@
 # If Else
-Let's break down the provided Go code step by step to understand each part.
+This Go code demonstrates the use of conditional statements (`if` and `else`) and the use of the short declaration (`:=`). Let's go through each part of the code:
 
 ```go
 package main
@@ -7,49 +7,33 @@ package main
 import "fmt"
 
 func main() {
+    // Check if 7 is even or odd
+    if 7%2 == 0 {
+        fmt.Println("7 is even")
+    } else {
+        fmt.Println("7 is odd")
+    }
+
+    // Check if 8 is divisible by 4
+    if 8%4 == 0 {
+        fmt.Println("8 is divisible by 4")
+    }
+
+    // Check if either 8 or 7 is even
+    if 8%2 == 0 || 7%2 == 0 {
+        fmt.Println("either 8 or 7 are even")
+    }
+
+    // Using the short declaration to declare a variable 'num' and check its value
+    if num := 9; num < 0 {
+        fmt.Println(num, "is negative")
+    } else if num < 10 {
+        fmt.Println(num, "has 1 digit")
+    } else {
+        fmt.Println(num, "has multiple digits")
+    }
+}
 ```
-
-Here, we start by declaring a package named "main" and importing the "fmt" package, which provides functions for formatted I/O.
-
-```go
-	if 7%2 == 0 {
-		fmt.Println("7 is even")
-	} else {
-		fmt.Println("7 is odd")
-	}
-```
-
-In this block, an `if` statement is used to check if the remainder of dividing 7 by 2 is equal to 0. If true, it prints "7 is even"; otherwise, it prints "7 is odd".
-
-```go
-	if 8%4 == 0 {
-		fmt.Println("8 is divisible by 4")
-	}
-```
-
-This `if` statement checks if the remainder of dividing 8 by 4 is equal to 0. If true, it prints "8 is divisible by 4".
-
-```go
-	if 8%2 == 0 || 7%2 == 0 {
-		fmt.Println("either 8 or 7 are even")
-	}
-```
-
-This `if` statement uses the logical OR (`||`) operator to check if either the remainder of dividing 8 by 2 is equal to 0 or the remainder of dividing 7 by 2 is equal to 0. If true, it prints "either 8 or 7 are even".
-
-```go
-	if num := 9; num < 0 {
-		fmt.Println(num, "is negative")
-	} else if num < 10 {
-		fmt.Println(num, "has 1 digit")
-	} else {
-		fmt.Println(num, "has multiple digits")
-	}
-```
-
-This part introduces a variable `num` with the value 9, using a short declaration statement within the `if` statement. It then checks if `num` is less than 0, printing "9 is negative" if true. If `num` is not negative but less than 10, it prints "9 has 1 digit". If neither condition is met, it prints "9 has multiple digits".
-
-This code demonstrates the use of conditional statements (`if`, `else if`, `else`), the modulo operator (%), logical OR operator (`||`), and the short declaration statement in Go. It's a good example to understand basic control flow in Go programming.
 
 ### Output
 ```
@@ -58,3 +42,18 @@ This code demonstrates the use of conditional statements (`if`, `else if`, `else
 either 8 or 7 are even
 9 has 1 digit
 ```
+
+### Explanation:
+
+1. `if 7%2 == 0 {...} else {...}`: Checks if the remainder of dividing 7 by 2 is equal to 0. If true, it prints "7 is even," otherwise, it prints "7 is odd."
+
+2. `if 8%4 == 0 {...}`: Checks if 8 is divisible by 4 (i.e., the remainder is 0). If true, it prints "8 is divisible by 4."
+
+3. `if 8%2 == 0 || 7%2 == 0 {...}`: Checks if either 8 or 7 is even (i.e., the remainder is 0 when divided by 2). If true, it prints "either 8 or 7 are even."
+
+4. `if num := 9; num < 0 {...} else if num < 10 {...} else {...}`: Uses the short declaration to declare a variable `num` and initialize it with the value 9. It then checks various conditions:
+   - If `num` is less than 0, it prints "9 is negative."
+   - If `num` is less than 10 (but not negative), it prints "9 has 1 digit."
+   - If neither condition is true, it prints "9 has multiple digits."
+
+These conditional statements help control the flow of the program based on the given conditions. The short declaration is often used in Go for concise variable declaration and initialization within a block.

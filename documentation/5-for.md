@@ -1,61 +1,40 @@
 # For Loop
 
-Let's go through the code step by step, explaining each part:
+This Go code demonstrates various usage of the `for` loop, including basic loop structure, loop with a condition, an infinite loop with a `break` statement, and using `continue` to skip certain iterations. Let's go through each part of the code:
 
 ```go
 package main
 
 import "fmt"
-```
 
-This code defines a Go program with the main package and imports the "fmt" package, which provides functions for formatting input and output.
-
-```go
 func main() {
-```
-
-Here, the `main` function is the entry point of the program. It's where the program starts executing.
-
-```go
+    // Basic for loop with a condition
     i := 1
     for i <= 3 {
         fmt.Println(i)
         i = i + 1
     }
-```
 
-This is a simple `for` loop. It initializes a variable `i` with the value 1. The loop condition is `i <= 3`, and as long as this condition is true, the loop will continue. In each iteration, it prints the value of `i` and increments it by 1.
-
-```go
+    // For loop with an initialization statement, a condition, and a post statement
     for j := 7; j <= 9; j++ {
         fmt.Println(j)
     }
-```
 
-This is another `for` loop, but with a different style. It initializes a variable `j` with the value 7, and the loop continues as long as `j` is less than or equal to 9. In each iteration, it prints the value of `j` and increments it by 1.
-
-```go
+    // Infinite loop with a break statement
     for {
         fmt.Println("loop")
         break
     }
-```
 
-This is an infinite loop. The absence of a condition means it will loop indefinitely. However, there's a `break` statement inside the loop, which will exit the loop after printing "loop" once. This is essentially a way to create a loop that runs until a certain condition is met, and then breaks out of it.
-
-```go
+    // For loop with continue statement to skip even numbers
     for n := 0; n <= 5; n++ {
         if n%2 == 0 {
             continue
         }
         fmt.Println(n)
     }
+}
 ```
-
-This is another `for` loop, iterating from `0` to `5`. Inside the loop, there's an `if` statement checking if `n` is even (`n%2 == 0`). If it's true, the `continue` statement is executed, which skips the rest of the loop's body for even values of `n`. If `n` is odd, it prints the value of `n`. This demonstrates the use of `continue` to skip specific iterations based on a condition.
-
-The code illustrates the basic structure and usage of `for` loops, including variations such as an infinite loop and the use of `continue` to skip certain iterations.
-
 ### Output
 ```
 1
@@ -69,3 +48,12 @@ loop
 3
 5
 ```
+### Explanation:
+
+1. `for i <= 3 {...}`: A basic `for` loop with a condition. It initializes `i` to 1 and continues looping as long as `i` is less than or equal to 3. It prints the value of `i` in each iteration and increments `i` by 1.
+
+2. `for j := 7; j <= 9; j++ {...}`: Another `for` loop with an initialization statement (`j := 7`), a condition (`j <= 9`), and a post statement (`j++`). It initializes `j` to 7, continues looping as long as `j` is less than or equal to 9, prints the value of `j` in each iteration, and increments `j` by 1.
+
+3. `for {...}`: An infinite loop. It continually prints "loop" and breaks out of the loop using the `break` statement after the first iteration.
+
+4. `for n := 0; n <= 5; n++ {...}`: A `for` loop with an initialization statement, a condition, and a post statement. It initializes `n` to 0, continues looping as long as `n` is less than or equal to 5, increments `n` by 1 in each iteration, and prints the value of `n` only if it's an odd number (using `if n%2 == 0 { continue }` to skip even numbers).
