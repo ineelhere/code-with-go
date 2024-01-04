@@ -1,4 +1,4 @@
-# Understanding the "Hello World" Program in Go 🚀
+# Hello World
 
 We'll delve into a simple yet fundamental Go program that prints "hello world" to the console.
 

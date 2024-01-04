@@ -1,3 +1,4 @@
+# Constants
 Let's go through the code step by step to understand what each part does.
 
 ```go
