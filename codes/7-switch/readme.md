@@ -83,3 +83,13 @@ Explanation:
    - `Don't know type string` for `"hey"`
 
 This code showcases the flexibility and power of the `switch` statement in Go, allowing developers to handle different types of conditions and expressions efficiently.
+
+### Output
+```
+Write 2 as two
+It's a weekday
+It's before noon
+I'm a bool
+I'm an int
+Don't know type string
+```

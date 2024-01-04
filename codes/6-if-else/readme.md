@@ -49,3 +49,11 @@ This `if` statement uses the logical OR (`||`) operator to check if either the r
 This part introduces a variable `num` with the value 9, using a short declaration statement within the `if` statement. It then checks if `num` is less than 0, printing "9 is negative" if true. If `num` is not negative but less than 10, it prints "9 has 1 digit". If neither condition is met, it prints "9 has multiple digits".
 
 This code demonstrates the use of conditional statements (`if`, `else if`, `else`), the modulo operator (%), logical OR operator (`||`), and the short declaration statement in Go. It's a good example to understand basic control flow in Go programming.
+
+### Output
+```
+7 is odd
+8 is divisible by 4
+either 8 or 7 are even
+9 has 1 digit
+```

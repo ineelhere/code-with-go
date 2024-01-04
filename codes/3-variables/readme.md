@@ -56,3 +56,12 @@ Here, the `:=` operator is used to declare and initialize a variable `f` with th
 Finally, the closing brace indicates the end of the `main` function.
 
 This Go program demonstrates variable declarations, assignments, and printing values using the `fmt` package. It also introduces the shorthand `:=` syntax for declaring and initializing variables in a single line.
+
+### Output
+```
+initial
+1 2
+true
+0
+apple
+```
