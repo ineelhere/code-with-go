@@ -1,69 +1,37 @@
 # Constants
-Let's go through the code step by step to understand what each part does.
+This Go code demonstrates the use of constants, basic arithmetic operations, and a function from the `math` package. Let's go through each part of the code:
 
 ```go
 package main
-```
-This line declares the package name, which must always be `main` for a standalone executable. The `main` package is the entry point for the Go program.
 
-```go
 import (
 	"fmt"
 	"math"
 )
-```
-Here, we import two packages: `fmt` for formatting and printing, and `math` for mathematical operations. These are standard libraries in Go.
 
-```go
+// Declare a constant 's' with type string and initialize it with the value "constant"
 const s string = "constant"
-```
-This line declares a constant named `s` with the value "constant" and of type string. In Go, constants are immutable and their values cannot be changed after declaration.
 
-```go
 func main() {
-```
-This is the main function, the entry point of the program.
-
-```go
+	// Print the value of the constant 's'
 	fmt.Println(s)
-```
-Prints the value of the constant `s` to the console.
 
-```go
+	// Declare a constant 'n' and initialize it with the value 500000000
 	const n = 500000000
-```
-Declares a constant `n` with the value 500000000. The type of `n` is inferred by the compiler.
 
-```go
+	// Declare a constant 'd' and initialize it with the result of the expression 3e20 / n
 	const d = 3e20 / n
-```
-Declares a constant `d` with the value of the result of the mathematical expression `3e20 / n`. `3e20` represents 3 multiplied by 10 to the power of 20. This line demonstrates how constants can be calculated at compile time.
-
-```go
 	fmt.Println(d)
-```
-Prints the value of the constant `d` to the console.
 
-```go
+	// Print the value of 'd' after converting it to int64
 	fmt.Println(int64(d))
-```
-Converts the constant `d` to an int64 (integer with 64 bits) and prints it to the console. This conversion is necessary because the result of the division is a floating-point number, and `fmt.Println` expects an integer.
 
-```go
+	// Print the result of the sine function applied to 'n' from the math package
 	fmt.Println(math.Sin(n))
-```
-Calculates the sine of the constant `n` using the `math.Sin` function from the math package and prints it to the console.
-
-```go
 }
 ```
-Closes the main function.
 
-To run this program, save it with a `.go` extension (e.g., `main.go`) and execute it using the `go run` command in the terminal:
-
-```bash
-go run main.go
-```
+When you run this Go program, it will output the values of the constants and the result of the mathematical operations to the console.
 
 The output should be something like:
 
@@ -74,4 +42,18 @@ constant
 -0.28470407323754404
 ```
 
-This tutorial covers the basic concepts of constants, data types, mathematical operations, and package imports in Go.
+### Explanation:
+
+1. `const s string = "constant"`: Declares a constant named `s` of type string and initializes it with the value "constant". Constants in Go are similar to variables but cannot be reassigned after their initial declaration.
+
+2. `fmt.Println(s)`: Prints the value of the constant `s` to the console.
+
+3. `const n = 500000000`: Declares a constant named `n` and initializes it with the value 500000000.
+
+4. `const d = 3e20 / n`: Declares a constant named `d` and initializes it with the result of the expression `3e20 / n`. The constant `d` is a floating-point number.
+
+5. `fmt.Println(d)`: Prints the value of the constant `d` to the console.
+
+6. `fmt.Println(int64(d))`: Prints the value of `d` after converting it to an int64. This conversion is necessary because `d` is a floating-point number, and `math.Sin` expects an argument of type `float64` or `float32`.
+
+7. `fmt.Println(math.Sin(n))`: Prints the result of the sine function applied to the constant `n` using the `Sin` function from the `math` package.
