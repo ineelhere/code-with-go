@@ -1,3 +1,5 @@
+# Switch
+
 The provided Go code demonstrates the usage of the `switch` statement in various scenarios. 
 
 Let's break down the code step by step:

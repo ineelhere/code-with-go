@@ -1,3 +1,4 @@
+# Array
 This Go (Golang) code is a simple program that demonstrates the usage of arrays in Go. Let's break down the code step by step:
 
 ```go
