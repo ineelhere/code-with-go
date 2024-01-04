@@ -53,3 +53,17 @@ This is an infinite loop. The absence of a condition means it will loop indefini
 This is another `for` loop, iterating from `0` to `5`. Inside the loop, there's an `if` statement checking if `n` is even (`n%2 == 0`). If it's true, the `continue` statement is executed, which skips the rest of the loop's body for even values of `n`. If `n` is odd, it prints the value of `n`. This demonstrates the use of `continue` to skip specific iterations based on a condition.
 
 The code illustrates the basic structure and usage of `for` loops, including variations such as an infinite loop and the use of `continue` to skip certain iterations.
+
+### Output
+```
+1
+2
+3
+7
+8
+9
+loop
+1
+3
+5
+```

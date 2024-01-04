@@ -13,7 +13,10 @@ func main() {
     fmt.Println("hello world")
 }
 ```
-
+## Output 
+```
+hello world
+```
 Let's break down the code step by step:
 
 - **`package main`**: Every Go program starts with a `package` declaration. The `main` package is special; it indicates that this is an executable program rather than a library.
