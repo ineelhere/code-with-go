@@ -1,5 +1,56 @@
 # Array
-This Go (Golang) code is a simple program that demonstrates the usage of arrays in Go. Let's break down the code step by step:
+
+This Go (Golang) code is a simple program that demonstrates the usage of arrays in Go. 
+
+Let's break down the code step by step:
+```go
+package main
+
+import "fmt"
+
+func main() {
+
+    // Declare an array 'a' of integers with a length of 5
+    var a [5]int
+    fmt.Println("emp:", a) // Print the content of array 'a' (initialized with zeros)
+    
+    // Set the fifth element of array 'a' to 100
+    a[4] = 100
+    fmt.Println("set:", a) // Print the modified array 'a'
+    fmt.Println("get:", a[4]) // Print the value of the fifth element in array 'a'
+
+    fmt.Println("len:", len(a)) // Print the length of array 'a'
+
+    // Declare and initialize an array 'b' with specific values
+    b := [5]int{1, 2, 3, 4, 5}
+    fmt.Println("dcl:", b) // Print the content of array 'b'
+
+    // Declare a 2D array 'twoD' with 2 rows and 3 columns
+    var twoD [2][3]int
+    
+    // Populate the 2D array 'twoD' with values based on the sum of row and column indices
+    for i := 0; i < 2; i++ {
+        for j := 0; j < 3; j++ {
+            twoD[i][j] = i + j
+        }
+    }
+    
+    fmt.Println("2d: ", twoD) // Print the 2D array 'twoD'
+}
+```
+
+### Output
+
+```
+emp: [0 0 0 0 0]
+set: [0 0 0 0 100]
+get: 100
+len: 5
+dcl: [1 2 3 4 5]
+2d:  [[0 1 2] [1 2 3]]
+```
+
+### More Explanation
 
 ```go
 package main
@@ -56,14 +107,3 @@ Here, a new array `b` is declared and initialized with values in a single line. 
 This part demonstrates the creation and initialization of a 2D array (`twoD`) with dimensions 2x3. The nested loop sets each element in the 2D array to the sum of its row and column indices. Finally, it prints the 2D array.
 
 In summary, this Go program covers basic array operations, including declaration, initialization, setting values, getting values, finding the length of an array, and working with 2D arrays. It's a good starting point for understanding the fundamentals of arrays in Go.
-
-### Output
-
-```
-emp: [0 0 0 0 0]
-set: [0 0 0 0 100]
-get: 100
-len: 5
-dcl: [1 2 3 4 5]
-2d:  [[0 1 2] [1 2 3]]
-```
