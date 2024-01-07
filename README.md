@@ -1,2 +1,0 @@
-# letsGo
-Learning Go!
