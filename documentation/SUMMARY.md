@@ -11,3 +11,5 @@
 * [Array](8-array.md)
 * [Slice](9-slice.md)
 * [Map](10-map.md)
+* [Range](11-range.md)
+* [Functions](12-functions.readme)
