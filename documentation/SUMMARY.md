@@ -12,4 +12,6 @@
 * [Slice](9-slice.md)
 * [Map](10-map.md)
 * [Range](11-range.md)
-* [Functions](12-functions.readme)
+* [Functions](12-functions.md)
+* [Multiple Return Values](13-multiple-return-values.md)
+* [Variadic Functions](14-variadic-functions.md)
