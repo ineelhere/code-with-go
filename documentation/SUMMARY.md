@@ -15,3 +15,5 @@
 * [Functions](12-functions.md)
 * [Multiple Return Values](13-multiple-return-values.md)
 * [Variadic Functions](14-variadic-functions.md)
+* [Closure](15-closure.md)
+* [Recursion](16-recursion.md)
