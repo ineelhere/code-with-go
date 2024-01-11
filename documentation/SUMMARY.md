@@ -20,3 +20,6 @@
 * [Pointers](17-pointers.md)
 * [Strings and Runes](18-strings-and-runes.md)
 * [Structs](19-structs.md)
+* [Methods](20-methods.md)
+* [Interfaces](21-interfaces.md)
+* [Struct Embedding](22-struct-embedding.md)
