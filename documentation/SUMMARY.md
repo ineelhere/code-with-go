@@ -17,3 +17,4 @@
 * [Variadic Functions](14-variadic-functions.md)
 * [Closure](15-closure.md)
 * [Recursion](16-recursion.md)
+* [Pointers](17-pointers.md)
