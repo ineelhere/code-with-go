@@ -18,3 +18,5 @@
 * [Closure](15-closure.md)
 * [Recursion](16-recursion.md)
 * [Pointers](17-pointers.md)
+* [Strings and Runes](18-strings-and-runes.md)
+* [Structs](19-structs.md)
