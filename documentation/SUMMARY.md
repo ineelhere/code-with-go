@@ -25,3 +25,4 @@
 * [Struct Embedding](22-struct-embedding.md)
 * [Generics](23-generics.md)
 * [Error](24-error.md)
+* [Goroutines](25-goroutines.md)
