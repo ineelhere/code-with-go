@@ -27,3 +27,5 @@
 * [Error](24-error.md)
 * [Goroutines](25-goroutines.md)
 * [Channels](26-channels.md)
+* [Channel Buffering](27-channelbuffering.md)
+* [Channel Synchronization](28-channel-synchronization.md)
