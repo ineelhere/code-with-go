@@ -29,3 +29,5 @@
 * [Channels](26-channels.md)
 * [Channel Buffering](27-channelbuffering.md)
 * [Channel Synchronization](28-channel-synchronization.md)
+* [Channel Directions](29-channel-directions.md)
+* [Select](30-select.md)
