@@ -31,3 +31,6 @@
 * [Channel Synchronization](28-channel-synchronization.md)
 * [Channel Directions](29-channel-directions.md)
 * [Select](30-select.md)
+* [Timeouts](31-timeouts.md)
+* [Non-Blocking Channel Operations](32-non-blocking-channel-operations.md)
+* [Closing Channels](33-closing-channels.md)
