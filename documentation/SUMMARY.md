@@ -34,3 +34,4 @@
 * [Timeouts](31-timeouts.md)
 * [Non-Blocking Channel Operations](32-non-blocking-channel-operations.md)
 * [Closing Channels](33-closing-channels.md)
+* [Range over Channels](34-range-over-channels.md)
