@@ -35,3 +35,6 @@
 * [Non-Blocking Channel Operations](32-non-blocking-channel-operations.md)
 * [Closing Channels](33-closing-channels.md)
 * [Range over Channels](34-range-over-channels.md)
+* [Timers](35-timers.md)
+* [Tickers](36-tickers.md)
+* [Worker Pools](37-worker-pools.md)
