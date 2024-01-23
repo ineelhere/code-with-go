@@ -38,3 +38,6 @@
 * [Timers](35-timers.md)
 * [Tickers](36-tickers.md)
 * [Worker Pools](37-worker-pools.md)
+* [Wait Groups](38-wait-groups.md)
+* [Rate Limiting](39-rate-limiting.md)
+* [Atomic Counters](40-atomic-conters.md)

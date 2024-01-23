@@ -2,7 +2,7 @@
 
 ![](https://miro.medium.com/v2/resize:fit:384/0*A6EB_Ykks5bPp_rM.gif)
 
-Inspired from [Go by Example](https://gobyexample.com/) by  Mark McGranaghan and Eli Bendersky ([Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/)), this is an attempt to document the Go learning journey with additional details and features.
+Inspired from [Go by Example](https://gobyexample.com/) by  Mark McGranaghan and Eli Bendersky ([Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/)), this is an attempt to document the Go learning journey with additional details and features. Of course, thanks to [ChatGPT](https://chat.openai.com/) for most of the explanations 🦾
 
 ### Collaborations and Contributions 🤝
 This is an open-source effort meant to be freely accessible by the community.
@@ -15,7 +15,7 @@ For contributing with code, here's a quick guideline 😉
 * [Raise a PR](https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request-from-github-desktop) to the `dev` branch 
 * Now you [chill](https://youtu.be/KOnFBHqztbM) while I review the code🥤
 
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW93c3ZrZHk2b2p5ZTZ4NjAyMzQ5YmluOGw2bHN1dXJraGc3N3BpayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/TLeLKUdIc1tvAxb7ab/giphy.gif)
+![](https://media.giphy.com/media/0Av9l0VIc01y1isrDw/giphy.gif)
 
 ___
 
