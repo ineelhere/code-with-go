@@ -48,3 +48,6 @@
 * [Panic](45-panic.md)
 * [Defer](46-defer.md)
 * [Recover](47-recover.md)
+* [String Functions](48-string-functions.md)
+* [String Formatting](49-string-formatting.md)
+* [Text Templates](50-text-templates.md)
