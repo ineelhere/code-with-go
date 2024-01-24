@@ -61,3 +61,7 @@
 * [Number Parsing](58-number-parsing.md)
 * [SHA256 Hashes](59-sha256-hashes.md)
 * [Base64 Encoding](60-base64-encoding.md)
+* [Reading Files](61-reading-files.md)
+* [Writing Files](62-writing-files.md)
+* [Line Filters](63-line-filters.md)
+* [File Paths](64-file-paths.md)
