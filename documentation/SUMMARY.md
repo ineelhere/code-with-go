@@ -41,3 +41,6 @@
 * [Wait Groups](38-wait-groups.md)
 * [Rate Limiting](39-rate-limiting.md)
 * [Atomic Counters](40-atomic-conters.md)
+* [Mutexes](41-mutexes.md)
+* [Stateful Goroutines](42-stateful-goroutines.md)
+* [Sorting](43-sorting.md)
