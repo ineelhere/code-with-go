@@ -44,3 +44,7 @@
 * [Mutexes](41-mutexes.md)
 * [Stateful Goroutines](42-stateful-goroutines.md)
 * [Sorting](43-sorting.md)
+* [Sorting by Functions](44-sorting-by-functions.md)
+* [Panic](45-panic.md)
+* [Defer](46-defer.md)
+* [Recover](47-recover.md)
