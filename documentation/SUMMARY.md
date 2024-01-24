@@ -58,3 +58,6 @@
 * [Epoch](55-epoch.md)
 * [Time Formatting / Parsing](56-time-formatting-parsing.md)
 * [Random Numbers](57-random-numbers.md)
+* [Number Parsing](58-number-parsing.md)
+* [SHA256 Hashes](59-sha256-hashes.md)
+* [Base64 Encoding](60-base64-encoding.md)
