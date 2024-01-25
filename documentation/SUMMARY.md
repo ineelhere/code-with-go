@@ -65,3 +65,5 @@
 * [Writing Files](62-writing-files.md)
 * [Line Filters](63-line-filters.md)
 * [File Paths](64-file-paths.md)
+* [Directories](65-directories.md)
+* [Temporary Files and Directories](66-temporary-files-and-directories.md)
