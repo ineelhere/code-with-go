@@ -17,7 +17,7 @@ For contributing with code, here's a quick guideline 😉
 
 ![](https://media.giphy.com/media/0Av9l0VIc01y1isrDw/giphy.gif)
 
-# Table of contents
+### Table of contents
 
 * [Lets Go! 🚀](documentation/README.md)
 * [Hello World](documentation/01-hello-world.md)
