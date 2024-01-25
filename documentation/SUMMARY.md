@@ -79,4 +79,6 @@
 * [Context](76-context.md)
 * [Spawning Processes](77-spawning-process.md)
 * [Exec'ing Processes](78-exec`ing-processes.md)
+* [Signals](79-signals.md)
+* [Exit](80-exit.md)
   
