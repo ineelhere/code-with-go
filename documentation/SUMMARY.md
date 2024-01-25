@@ -69,3 +69,6 @@
 * [Temporary Files and Directories](66-temporary-files-and-directories.md)
 * [Embed Directive](67-embed-directive.md)
 * [Testing and Benchmarking](68-testing-and-benchmarking.md)
+* [Command-Line Arguments](69-command-line-interface.md)
+* [Command-Line Flags](70-command-line-flags.md)
+* [Command-Line Subcommands](71-command-line-subcommands.md)
