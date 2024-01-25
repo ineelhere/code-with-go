@@ -72,3 +72,5 @@
 * [Command-Line Arguments](69-command-line-interface.md)
 * [Command-Line Flags](70-command-line-flags.md)
 * [Command-Line Subcommands](71-command-line-subcommands.md)
+* [Environment Variables](72-environment-variables.md)
+* [Logging](73-logging.md)
