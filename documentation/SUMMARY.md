@@ -67,3 +67,4 @@
 * [File Paths](64-file-paths.md)
 * [Directories](65-directories.md)
 * [Temporary Files and Directories](66-temporary-files-and-directories.md)
+* [Embed Directive](67-embed-directive.md)
