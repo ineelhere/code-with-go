@@ -74,3 +74,9 @@
 * [Command-Line Subcommands](71-command-line-subcommands.md)
 * [Environment Variables](72-environment-variables.md)
 * [Logging](73-logging.md)
+* [HTTP Client](74-http-client.md)
+* [HTTP Server](75-http-server.md)
+* [Context](76-context.md)
+* [Spawning Processes](77-spawning-process.md)
+* [Exec'ing Processes](78-exec`ing-processes.md)
+  
