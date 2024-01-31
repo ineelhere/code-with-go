@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>readme</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="README_files/libs/clipboard/clipboard.min.js"></script>
+<script src="README_files/libs/quarto-html/quarto.js"></script>
+<script src="README_files/libs/quarto-html/popper.min.js"></script>
+<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="README_files/libs/quarto-html/anchor.min.js"></script>
+<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<section id="learning-go-by-doing" class="level1">
+<h1>Learning Go by doing! 🚀</h1>
+<p><img src="https://miro.medium.com/v2/resize:fit:384/0*A6EB_Ykks5bPp_rM.gif" class="img-fluid"></p>
+<p>Inspired from <a href="https://gobyexample.com/">Go by Example</a> by Mark McGranaghan and Eli Bendersky (<a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>), this is an attempt to document the Go learning journey with additional details and features. Of course, thanks to <a href="https://chat.openai.com/">ChatGPT</a> for most of the explanations 🦾</p>
+<section id="collaborations-and-contributions" class="level3">
+<h3 class="anchored" data-anchor-id="collaborations-and-contributions">Collaborations and Contributions 🤝</h3>
+<p>This is an open-source effort meant to be freely accessible by the community.</p>
+<p>For contributing with code, here’s a quick guideline 😉 * Go to <a href="https://github.com/ineelhere/letsGo">https://github.com/ineelhere/letsGo</a> * You need to either <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">clone</a> the repository or <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">fork</a> it * <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository">Create a branch of your own</a>, preferably from the <code>dev</code> branch * <a href="https://github.com/git-guides/git-commit">Commit</a> your changes * <a href="https://docs.github.com/en/desktop/working-with-your-remote-repository-on-github-or-github-enterprise/creating-an-issue-or-pull-request-from-github-desktop">Raise a PR</a> to the <code>dev</code> branch * Now you <a href="https://youtu.be/KOnFBHqztbM">chill</a> while I review the code🥤</p>
+<p><img src="https://media.giphy.com/media/0Av9l0VIc01y1isrDw/giphy.gif" class="img-fluid"></p>
+</section>
+<section id="table-of-contents" class="level3">
+<h3 class="anchored" data-anchor-id="table-of-contents">Table of contents</h3>
+<ul>
+<li><a href="README.html">Lets Go! 🚀</a></li>
+<li><a href="01-hello-world.html">Hello World</a></li>
+<li><a href="2-values.html">Values</a></li>
+<li><a href="3-variables.html">Variables</a></li>
+<li><a href="4-constants.html">Constants</a></li>
+<li><a href="5-for.html">For Loop</a></li>
+<li><a href="6-iflese.html">If Else</a></li>
+<li><a href="7-switch.html">Switch</a></li>
+<li><a href="8-array.html">Array</a></li>
+<li><a href="9-slice.html">Slice</a></li>
+<li><a href="10-map.html">Map</a></li>
+<li><a href="11-range.html">Range</a></li>
+<li><a href="12-functions.html">Functions</a></li>
+<li><a href="13-multiple-return-values.html">Multiple Return Values</a></li>
+<li><a href="14-variadic-functions.html">Variadic Functions</a></li>
+<li><a href="15-closure.html">Closure</a></li>
+<li><a href="16-recursion.html">Recursion</a></li>
+<li><a href="17-pointers.html">Pointers</a></li>
+<li><a href="18-strings-and-runes.html">Strings and Runes</a></li>
+<li><a href="19-structs.html">Structs</a></li>
+<li><a href="20-methods.html">Methods</a></li>
+<li><a href="21-interfaces.html">Interfaces</a></li>
+<li><a href="22-struct-embedding.html">Struct Embedding</a></li>
+<li><a href="23-generics.html">Generics</a></li>
+<li><a href="24-error.html">Error</a></li>
+<li><a href="25-goroutines.html">Goroutines</a></li>
+<li><a href="26-channels.html">Channels</a></li>
+<li><a href="27-channelbuffering.html">Channel Buffering</a></li>
+<li><a href="28-channel-synchronization.html">Channel Synchronization</a></li>
+<li><a href="29-channel-directions.html">Channel Directions</a></li>
+<li><a href="30-select.html">Select</a></li>
+<li><a href="31-timeouts.html">Timeouts</a></li>
+<li><a href="32-non-blocking-channel-operations.html">Non-Blocking Channel Operations</a></li>
+<li><a href="33-closing-channels.html">Closing Channels</a></li>
+<li><a href="34-range-over-channels.html">Range over Channels</a></li>
+<li><a href="35-timers.html">Timers</a></li>
+<li><a href="36-tickers.html">Tickers</a></li>
+<li><a href="37-worker-pools.html">Worker Pools</a></li>
+<li><a href="38-wait-groups.html">Wait Groups</a></li>
+<li><a href="39-rate-limiting.html">Rate Limiting</a></li>
+<li><a href="40-atomic-conters.html">Atomic Counters</a></li>
+<li><a href="41-mutexes.html">Mutexes</a></li>
+<li><a href="42-stateful-goroutines.html">Stateful Goroutines</a></li>
+<li><a href="43-sorting.html">Sorting</a></li>
+<li><a href="44-sorting-by-functions.html">Sorting by Functions</a></li>
+<li><a href="45-panic.html">Panic</a></li>
+<li><a href="46-defer.html">Defer</a></li>
+<li><a href="47-recover.html">Recover</a></li>
+<li><a href="48-string-functions.html">String Functions</a></li>
+<li><a href="49-string-formatting.html">String Formatting</a></li>
+<li><a href="50-text-templates.html">Text Templates</a></li>
+<li><a href="51-regular-expressions.html">Regular Expressions</a></li>
+<li><a href="52-json.html">JSON</a></li>
+<li><a href="53-xml.html">XML</a></li>
+<li><a href="54-time.html">Time</a></li>
+<li><a href="55-epoch.html">Epoch</a></li>
+<li><a href="56-time-formatting-parsing.html">Time Formatting / Parsing</a></li>
+<li><a href="57-random-numbers.html">Random Numbers</a></li>
+<li><a href="58-number-parsing.html">Number Parsing</a></li>
+<li><a href="59-sha256-hashes.html">SHA256 Hashes</a></li>
+<li><a href="60-base64-encoding.html">Base64 Encoding</a></li>
+<li><a href="61-reading-files.html">Reading Files</a></li>
+<li><a href="62-writing-files.html">Writing Files</a></li>
+<li><a href="63-line-filters.html">Line Filters</a></li>
+<li><a href="64-file-paths.html">File Paths</a></li>
+<li><a href="65-directories.html">Directories</a></li>
+<li><a href="66-temporary-files-and-directories.html">Temporary Files and Directories</a></li>
+<li><a href="67-embed-directive.html">Embed Directive</a></li>
+<li><a href="68-testing-and-benchmarking.html">Testing and Benchmarking</a></li>
+<li><a href="69-command-line-interface.html">Command-Line Arguments</a></li>
+<li><a href="70-command-line-flags.html">Command-Line Flags</a></li>
+<li><a href="71-command-line-subcommands.html">Command-Line Subcommands</a></li>
+<li><a href="72-environment-variables.html">Environment Variables</a></li>
+<li><a href="73-logging.html">Logging</a></li>
+<li><a href="74-http-client.html">HTTP Client</a></li>
+<li><a href="75-http-server.html">HTTP Server</a></li>
+<li><a href="76-context.html">Context</a></li>
+<li><a href="77-spawning-process.html">Spawning Processes</a></li>
+<li><a href="78-exec%60ing-processes.html">Exec’ing Processes</a></li>
+<li><a href="79-signals.html">Signals</a></li>
+<li><a href="80-exit.html">Exit</a> ___</li>
+</ul>
+<p><strong>© <code>Indraneel Chakraborty</code> | 2024</strong> 🧑‍💻</p>
+<p><a href="mailto:hello.indraneel@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/indraneelchakraborty/">LinkedIn</a> | <a href="https://github.com/ineelhere">GitHub</a></p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
