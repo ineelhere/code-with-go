@@ -1,4 +1,4 @@
-The code you provided is a Go program that demonstrates executing shell commands from Go using the `os/exec` package. Here's a breakdown of the code:
+This code is a Go program that demonstrates executing shell commands from Go using the `os/exec` package. Here's a breakdown of the code:
 
 ```go
 package main

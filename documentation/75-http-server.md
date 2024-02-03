@@ -1,4 +1,4 @@
-Your program is a simple HTTP server written in Go. It defines two HTTP handlers: `/hello` and `/headers`. When the server receives a request to either of these paths, it will respond accordingly.
+This program is a simple HTTP server written in Go. It defines two HTTP handlers: `/hello` and `/headers`. When the server receives a request to either of these paths, it will respond accordingly.
 
 Here's a breakdown of the code:
 
