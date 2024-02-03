@@ -1,4 +1,4 @@
-Your program is a simple HTTP server written in Go that defines an HTTP handler function called `hello`. This handler uses the request's context to implement a timeout for processing the request.
+This program is a simple HTTP server written in Go that defines an HTTP handler function called `hello`. This handler uses the request's context to implement a timeout for processing the request.
 
 Here's a breakdown of the code:
 

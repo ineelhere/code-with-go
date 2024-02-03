@@ -1,4 +1,4 @@
-The code you provided demonstrates using the `syscall.Exec` function to replace the current Go process with a new process (in this case, running the `ls` command). Here's a breakdown of the code:
+This code demonstrates using the `syscall.Exec` function to replace the current Go process with a new process (in this case, running the `ls` command). Here's a breakdown of the code:
 
 ```go
 package main
