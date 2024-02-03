@@ -1,4 +1,4 @@
-Your program demonstrates making an HTTP GET request to the "https://gobyexample.com" website and printing the first five lines of the response body. Here's a breakdown of the code:
+This program demonstrates making an HTTP GET request to the "https://gobyexample.com" website and printing the first five lines of the response body. Here's a breakdown of the code:
 
 ```go
 package main

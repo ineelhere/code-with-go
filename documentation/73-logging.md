@@ -1,4 +1,4 @@
-Your program demonstrates the use of the standard `log` package and the `log/slog` package (structured logger) in Go. Let me break down the code and provide some explanations:
+This program demonstrates the use of the standard `log` package and the `log/slog` package (structured logger) in Go. Let me break down the code and provide some explanations:
 
 ```go
 package main
