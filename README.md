@@ -8,7 +8,7 @@ Inspired from [Go by Example](https://gobyexample.com/) by  Mark McGranaghan and
 This is an open-source effort meant to be freely accessible by the community.
 
 For contributing with code, here's a quick guideline 😉
-* Go to [https://github.com/ineelhere/letsGo](https://github.com/ineelhere/letsGo)
+* Go to [https://github.com/ineelhere/code-with-go](https://github.com/ineelhere/code-with-go)
 * You need to either [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the repository or [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) it
 * [Create a branch of your own](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository), preferably from the `dev` branch
 * [Commit](https://github.com/git-guides/git-commit) your changes
@@ -19,7 +19,7 @@ For contributing with code, here's a quick guideline 😉
 
 ### Table of contents
 
-* [Lets Go! 🚀](documentation/README.md)
+* [Code With Go! 🚀](documentation/README.md)
 * [Hello World](documentation/01-hello-world.md)
 * [Values](documentation/2-values.md)
 * [Variables](documentation/3-variables.md)
