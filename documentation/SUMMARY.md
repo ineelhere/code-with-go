@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Lets Go! 🚀](README.md)
+* [Code With Go! 🚀](README.md)
 * [Hello World](01-hello-world.md)
 * [Values](2-values.md)
 * [Variables](3-variables.md)
