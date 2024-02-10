@@ -99,7 +99,8 @@ For contributing with code, here's a quick guideline 😉
 * [Spawning Processes](77-spawning-process.md)
 * [Exec'ing Processes](78-exec`ing-processes.md)
 * [Signals](79-signals.md)
-* [Exit](80-exit.md)
+* [Image resize](80-image-resize.md)
+* [Exit](81-exit.md)
 ___
 
 **© `Indraneel Chakraborty` | 2024** 🧑‍💻
